@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  sample-nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    image: sample-nginx:latest
+    container_name: sample-nginx
